@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo Trang Login</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/user.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+
+<body>
+<section>
+
+    <div class="img-bg">
+        <img src="https://niemvuilaptrinh.ams3.cdn.digitaloceanspaces.com/tao_trang_dang_nhap/hinh_anh_minh_hoa.jpg"
+             alt="Hình Ảnh Minh Họa">
+    </div>
+
+    <div class="noi-dung" class="fixed-top">
+        <div class="form">
+            <h2 >Đăng Ký</h2>
+
+                <div class="input-form">
+                    <span>Account</span>
+                    <input type="text" id="account">
+                    <br>
+                    <div id="messageName" ></div>
+                </div>
+                <div class="input-form">
+                    <span>Password</span>
+                    <input type="password" id="password">
+                    <div id="messagePassword"></div>
+                </div>
+                <div class="input-form">
+                    <span>Full Name</span>
+                    <input type="fullName" id="fullName">
+                    <div id="messageFullName"></div>
+                </div>
+                <div class="input-form">
+                    <span>Date Of Birth</span>
+                    <input type="date" id="dataOfBirth">
+                    <div id="messageDate" class="message-error"></div>
+
+                </div>
+                <div class="input-form">
+                    <select name="value" id="gender">
+                        <option value="male-gender" class="male-gender">Nam</option>
+                        <option value="female-gender" class="female-gender">Nữ</option>
+                        <option value="other-genders" class="other-genders">Khác</option>
+                    </select>
+                    <div id="messageGenders"></div>
+
+                </div>
+                <div class="input-form">
+                    <span>Address</span>
+                    <input type="text" id="address">
+                    <div id="messageAddress"></div>
+                </div>
+                <div class="input-form">
+                    <span>Phone</span>
+                    <input type="number" id="phoneNumber">
+                    <div id="messagePhoneNumber"></div>
+                </div>
+
+
+
+                <div class="input-form" >
+                    <button type="submit" id="sigup" class="btn btn-outline-primary" disabled>Sig Up</button>
+                    <button class="btn btn-outline-primary" onclick="check()">Check</button>
+                </div>
+
+
+        </div>
+    </div>
+
+</section>
+</body>
+
+</html>
