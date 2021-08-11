@@ -32,11 +32,6 @@ function showListFriend(){
         type: "GET",
         url: "http://localhost:8080/relationships/"+localStorage.getItem("id"),
         success: function (list){
-            // let friend = [];
-            // for (let i = 0; i < list.length; i++) {
-            //     friend.push(list[i].id);
-            // }
-            // localStorage.setItem()
             let str = '';
             for (let i = 0; i < list.length; i++) {
                 str+= '<div class="col-xl-3 col-sm-6 mb-5">\n' +
@@ -77,7 +72,7 @@ function showInformation(){
                 // test modal
                 // '   <div class="col-6"><button style="width: 200%" class="btn btn-outline-warning"><p style="color: coral">Update</p></button></div>' +
                 '   <div class="col-6"><div>\n' +
-                '  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="updateUserToModal()">\n' +
+                '  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="showFormUpdate()">\n' +
                 '  Update\n' +
                 '  </button>\n' +
                 '</div></div>' +
@@ -143,17 +138,16 @@ function findPostByAccountId(){
                     '    <p class="card-text">' + post[i].content + '</p>\n' +
                     '  </div>\n' +
                     '  <img src="https://studynet.vn/wp-content/uploads/2019/11/black-friday-la-ngay-gi.jpg" class="card-img-top" alt="...">\n' +
-                    '</div>'+ '</div>'
+                    '</div>'+
+                    '<textarea name="" id="" placeholder="comment" style="width: 80%"></textarea>'+
+                    '</div>'
             }
             document.getElementById("post&friend").innerHTML = str;
         }
     })
 }
 
-
-function updateUserToModal(){
-    $('#updateUser').modal('hide');
-
+function showFormUpdate(){
     $.ajax({
         headers: {
             'Accept': 'application/json',
@@ -162,94 +156,66 @@ function updateUserToModal(){
         type:"get",
         url: "http://localhost:8080/users/"+localStorage.getItem("id"),
         success: function (user){
-            // console.log(user)
-
-            let userModal = '<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">\n' +
-                '  <div class="modal-dialog">\n' +
-                '    <div class="modal-content">\n' +
-                '      <div class="modal-header">\n' +
-                '        <h5 class="modal-title" id="staticBackdropLabel">Update Information</h5>\n' +
-                '        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>\n' +
-                '      </div>\n' +
-                '      <div class="modal-body">\n' +
-                '        <h6>Full Name</h6>\n' +
-                '        <div><input type="text" style="width: 100%'+ user.fullName+'"></div>\n' +
-                '      </div>\n' +
-                '      <div class="modal-body">\n' +
-                '        <h6>Date Of Birth</h6>\n' +
-                '        <div><input type="text" style="width: 100%"></div>\n' +
-                '      </div>\n' +
-                '      <div class="modal-body">\n' +
-                '        <h6>Phone</h6>\n' +
-                '        <div><input type="text" style="width: 100%"></div>\n' +
-                '      </div>\n' +
-                '      <div class="modal-body">\n' +
-                '        <h6>Gender</h6>\n' +
-                '        <div><input type="text" style="width: 100%"></div>\n' +
-                '      </div>\n' +
-                '      <div class="modal-body">\n' +
-                '        <h6>Address</h6>\n' +
-                '        <div><input type="text" style="width: 100%"></div>\n' +
-                '      </div>\n' +
-                '      <div class="modal-body">\n' +
-                '        <h6>Avatar</h6>\n' +
-                '        <div><input type="text" style="width: 100%"></div>\n' +
-                '      </div>\n' +
-                '      <div class="modal-body">\n' +
-                '        <h6>Background</h6>\n' +
-                '        <div><input type="text" style="width: 100%"></div>\n' +
-                '      </div>\n' +
-                '      <div class="modal-body">\n' +
-                '        <h6>Description</h6>\n' +
-                '        <div><input type="text" style="width: 100%"></div>\n' +
-                '      </div>\n' +
-                '      <div class="modal-footer">\n' +
-                '        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>\n' +
-                '        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>\n' +
-                '      </div>\n' +
-                '    </div>\n' +
+            let str = '<div>\n' +
+                '  <div>\n' +
+                '    <div>Full Name</div>\n' +
+                '    <div><input type="text" id="fullName1" value="'+user.fullName+'" style="width: 100%"></div>\n' +
                 '  </div>\n' +
-                '</div>';
+                '  <div>\n' +
+                '    <div>Date Of Birth</div>\n' +
+                '    <div><input type="text" id="date1" value="'+ user.dateOfBirth+'" style="width: 100%"></div>\n' +
+                '  </div>\n' +
+                '  <div>\n' +
+                '    <div>Gender</div>\n' +
+                '    <div><input type="text" id="gender1" value="'+ user.gender+'" style="width: 100%"></div>\n' +
+                '  </div>\n' +
+                '  <div>\n' +
+                '    <div>Address</div>\n' +
+                '    <div><input type="text" id="address1" value="'+user.address+'" style="width: 100%"></div>\n' +
+                '  </div>\n' +
+                '  <div>\n' +
+                '    <div>Phone</div>\n' +
+                '    <div><input type="text" id="phone1" value="'+user.phoneNumber+'" style="width: 100%"></div>\n' +
+                '  </div>\n' +
+                '  \n' +
+                '  <div>\n' +
+                '    <div>Description</div>\n' +
+                '    <div><textarea type="text" id="description1" value="'+user.description+'" style="width: 100%"></textarea></div>\n' +
+                '  </div>\n' +
 
-            document.getElementById("modal").innerHTML=userModal;
+                ' <button onclick="updateInformation()" class="btn btn-danger">Update</button>'
+            '</div>'
+            document.getElementById("information").innerHTML = str;
         }
     })
 }
-
 function updateInformation(){
-
-    let fullName = document.getElementById("fullName").value;
-    console.log(fullName)
-    // let dateOfBirth = document.getElementById("modalDateOfBirth").value;
-    // let gender = document.getElementById("modalGender").value;
-    // let phoneNumber = document.getElementById("modalPhone").value;
-    // let avatar = document.getElementById("modalAvatar").value;
-    // let backGround = document.getElementById("modalBackGround").value;
-    // let address = document.getElementById("modalAddress").value;
-    // let description = document.getElementById("modalDescription").value;
-    let user = {
-        fullName: fullName,
-        dateOfBirth: document.getElementById("date").value,
-        gender: document.getElementById("gender").value,
-        avatar: document.getElementById("avatar").value,
-        background: document.getElementById("background").value,
-        address: document.getElementById("address").value,
-        description: document.getElementById("description").value,
-        phoneNumber: document.getElementById("phone").value
-    };
-    // console.log(user)
+    let user1 = {
+        fullName: document.getElementById("fullName1").value,
+        dateOfBirth: document.getElementById("date1").value,
+        gender: document.getElementById("gender1").value,
+        address: document.getElementById("address1").value,
+        description: document.getElementById("description1").value,
+        phoneNumber: document.getElementById("phone1").value
+    }
     $.ajax({
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
         },
-        type: "put",
-        data: JSON.stringify(user),
-        url: "http://localhost:8080/users/update/"+localStorage.getItem("id"),
+        type: "PUT",
+        data: JSON.stringify(user1),
+        url: "http://localhost:8080/users/update/"+ localStorage.getItem("id"),
         success: function (){
-            alert("đsung rồi")
+            alert("Đã update thành công")
             getLayout()
         }
     })
 }
+
+// Tìm số lượng bạn bè theo id
+function countFriend(){
+
+}
+
 

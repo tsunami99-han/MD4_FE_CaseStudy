@@ -25,10 +25,14 @@
         data: JSON.stringify(user),
         url: 'http://localhost:8080/users/login',
         success: function (data){
-          console.log(data)
+          console.log(data.roles[0].authority)
           localStorage.setItem("token", data.accessToken)
           localStorage.setItem("id", data.id)
-          window.location.href='personalPage.html'
+          localStorage.setItem("user", data.username)
+          if (data.roles[0].authority == "ROLE_ADMIN"){
+            window.location.href = 'pageAdmin.html'
+          }else
+            window.location.href='personalPage.html'
         },
         error: function (){
           alert("sai tài khoản hoặc mật khẩu rồi")
@@ -39,7 +43,7 @@
   </script>
 
 </head>
-<body onload="findUser()">
+<body>
 <div>
   <div>User name:
     <input type="text" id="user">

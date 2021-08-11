@@ -2,13 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="add621e6-aa9b-428b-a7c9-1bf89e86e5f9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Case-study-md4-wt/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Case-study-md4-wt/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case-study-md4-wt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Case-study-md4-wt/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-study-md4-wt/CSS/test.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-study-md4-wt/JS/mainAdminPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-study-md4-wt/test/pageAdmin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-study-md4-wt/test/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case-study-md4-wt/test/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Case-study-md4-wt/test/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case-study-md4-wt/test/mainPersonalPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/Case-study-md4-wt/JS/mainPersonalPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case-study-md4-wt/test/personalPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Case-study-md4-wt/test/personalPage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -19,11 +34,19 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/WebstormProjects/car0308" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin-Thính\Desktop\FE\MD4_FE_CaseStudy\Case-study-md4-wt\JS" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -34,6 +57,7 @@
       <option name="presentableId" value="Default" />
       <updated>1628478556842</updated>
       <workItem from="1628478558153" duration="9000" />
+      <workItem from="1628647966784" duration="35048000" />
     </task>
     <servers />
   </component>

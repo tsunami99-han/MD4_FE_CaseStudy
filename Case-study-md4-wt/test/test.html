@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+  <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#createProducts">Create New
+    Product
+  </button>
+</div>
+
+<div class="modal fade" id="createProducts" tabindex="-1" aria-labelledby="exampleModalLabel" onload="getCategory()" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Add New Product</h5>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label class="form-label">Name</label>
+          <input type="email" class="form-control" id="modalCreate__name" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label class="form-label" >Category</label>
+          <label>
+            <select id="modalCreate__category">
+
+              <!--                            <option th:each="c:${categories}" th:value="${c.id}" th:text="${c.name}"></option>-->
+            </select>
+          </label>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Price</label>
+          <input type="text" class="form-control" id="modalCreate__price">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Quantity</label>
+          <input type="text" class="form-control" id="modalCreate__quantity">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Color</label>
+          <input type="text" class="form-control" id="modalCreate__color">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Description</label>
+          <textarea type="text" class="form-control" id="modalCreate__description"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" onclick="createProduct()" id="createButton" class="btn btn-primary">Create
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
