@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script>
+    function login(){
+      let username = document.getElementById("user").value;
+      let password = document.getElementById("password").value;
+      let user = {
+        username: username,
+        password: password
+      }
+      console.log(user)
+      $.ajax({
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        type: "post",
+        data: JSON.stringify(user),
+        url: 'http://localhost:8080/users/login',
+        success: function (data){
+          console.log(data)
+          localStorage.setItem("token", data.accessToken)
+          localStorage.setItem("id", data.id)
+          window.location.href='personalPage.html'
+        },
+        error: function (){
+          alert("sai tài khoản hoặc mật khẩu rồi")
+        }
+      })
+    }
+
+  </script>
+
+</head>
+<body onload="findUser()">
+<div>
+  <div>User name:
+    <input type="text" id="user">
+  </div>
+  <div>Password:
+    <input type="password" id="password">
+  </div>
+<button onclick="login()">Login</button>
+</div>
+</body>
+</html>
