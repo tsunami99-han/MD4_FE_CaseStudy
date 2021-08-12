@@ -1,10 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo Trang Login</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/loginsignup.css">
+    <script src="js/user.js"></script>
 </head>
 <body>
-Hello a Tuyền gà A Thao ngựa A Lực cá sấu
+<section>
+
+    <div class="img-bg">
+        <img src="https://niemvuilaptrinh.ams3.cdn.digitaloceanspaces.com/tao_trang_dang_nhap/hinh_anh_minh_hoa.jpg"
+             alt="Hình Ảnh Minh Họa">
+    </div>
+
+    <div class="noi-dung">
+        <div class="form">
+            <h2>Trang đăng nhập</h2>
+                <div class="input-form">
+                    <span>Tài khoản</span>
+                    <input type="text" id="username">
+                </div>
+                <div class="input-form">
+                    <span>Mật Khẩu</span>
+                    <input type="password" id="password">
+                </div>
+                <div class="input-form">
+                    <input type="submit" value="Đăng nhập" onclick="login()">
+                </div>
+                <div class="input-form">
+                    <p>Bạn Chưa Có Tài Khoản? <a href="./signup.html">Đăng Ký</a></p>
+                </div>
+
+        </div>
+    </div>
+
+</section>
 </body>
+
 </html>
