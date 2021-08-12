@@ -9,7 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
           integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/login/login.css">
+
 
 </head>
 
@@ -23,27 +26,27 @@
 
     <div class="noi-dung">
         <div class="form">
-            <h2>Trang Đăng Nhập</h2>
-            <form action="">
+
+                <h2>Trang Đăng Nhập</h2>
                 <div class="input-form">
                     <span>Tên Người Dùng</span>
-                    <input type="text" name="account">
+                    <input type="text" id="username">
                 </div>
                 <div class="input-form">
                     <span>Mật Khẩu</span>
-                    <input type="password" name="password">
+                    <input type="password" id="password">
                 </div>
                 <div class="input-form">
-                    <input type="submit" value="Đăng Nhập" onclick="">
+                    <input type="submit" value="login" onclick="login()">
                 </div>
                 <div class="input-form">
                     <p>Bạn Chưa Có Tài Khoản? <a href="./sigup.html">Đăng Ký</a></p>
                 </div>
-            </form>
+
 
         </div>
     </div>
-
+    <script src="js/user.js"></script>
 </section>
 </body>
 

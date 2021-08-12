@@ -100,4 +100,32 @@ function check() {
 
         $('#sigup').prop('disabled', false);
     }
-};
+
+}
+function createPost() {
+    let content = document.getElementById('content').value;
+    let image = $('#uploadFile')[0].files[0];
+    let status = document.getElementById('status').value;
+    let data = new FormData();
+    data.append("content", content)
+    data.append("status", status)
+    data.append("image", image)
+    data.append("userId", '8')
+    console.log(data)
+    $.ajax({
+        type:"POST",
+        enctype:'multipart/form-data',
+        url:"http://localhost:8080/relationshipss/create-post",
+        data:data,
+        processData: false,
+        contentType: false,
+        cache: false,
+        success:function (){
+            alert("ok")
+        },
+        error(){
+           alert("lỗi")
+        }
+    })
+
+}

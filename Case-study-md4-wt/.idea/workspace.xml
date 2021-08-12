@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2facab44-1e95-417a-bcc2-a9d37cd24c36" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sigup.html" beforeDir="false" afterPath="$PROJECT_DIR$/sigup.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +42,12 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\Bài Tập\MD4_FE_CaseStudy\Case-study-md4-wt" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Bài Tập\MD4_FE_CaseStudy\Case-study-md4-wt\css" />
+      <recent name="F:\Bài Tập\MD4_FE_CaseStudy\Case-study-md4-wt\login" />
+      <recent name="F:\Bài Tập\MD4_FE_CaseStudy\Case-study-md4-wt\js" />
+      <recent name="F:\Bài Tập\MD4_FE_CaseStudy\Case-study-md4-wt" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -56,6 +63,20 @@
       <workItem from="1628419339483" duration="13000" />
       <workItem from="1628419399286" duration="309000" />
       <workItem from="1628434507459" duration="598000" />
+      <workItem from="1628493655532" duration="3498000" />
+      <workItem from="1628500523550" duration="4801000" />
+      <workItem from="1628508521688" duration="3141000" />
+      <workItem from="1628520599612" duration="2940000" />
+      <workItem from="1628530383951" duration="2485000" />
+      <workItem from="1628533068801" duration="329000" />
+      <workItem from="1628559560279" duration="1836000" />
+      <workItem from="1628566519199" duration="1480000" />
+      <workItem from="1628583201191" duration="3922000" />
+      <workItem from="1628609778652" duration="49000" />
+      <workItem from="1628609952207" duration="3064000" />
+      <workItem from="1628644340978" duration="20325000" />
+      <workItem from="1628672120862" duration="2093000" />
+      <workItem from="1628692070597" duration="1594000" />
     </task>
     <servers />
   </component>

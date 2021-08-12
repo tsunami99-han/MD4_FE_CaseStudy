@@ -10,9 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
           integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login/login.css">
     <script src="js/user.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
 </head>
 
 <body>
@@ -56,26 +57,24 @@
                         <option value="other-genders" class="other-genders">Khác</option>
                     </select>
                     <div id="messageGenders"></div>
-
                 </div>
+
                 <div class="input-form">
                     <span>Address</span>
                     <input type="text" id="address">
                     <div id="messageAddress"></div>
                 </div>
+
                 <div class="input-form">
                     <span>Phone</span>
                     <input type="number" id="phoneNumber">
                     <div id="messagePhoneNumber"></div>
                 </div>
 
-
-
                 <div class="input-form" >
-                    <button type="submit" id="sigup" class="btn btn-outline-primary" disabled>Sig Up</button>
+                    <button type="submit" id="sigup" class="btn btn-outline-primary" onclick="addNewUser()" disabled>Sig Up</button>
                     <button class="btn btn-outline-primary" onclick="check()">Check</button>
                 </div>
-
 
         </div>
     </div>
