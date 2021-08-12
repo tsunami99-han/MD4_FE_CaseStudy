@@ -12,13 +12,13 @@ function getLayout(){
 
 }
 
-function showListUser(){
+function showListUser() {
     $.ajax({
         type: "GET",
         url: "http://localhost:8080/users",
-        success: function (list){
+        success: function (list) {
             console.log(list)
-            let str = '    <h4>User Management</h4> '+
+            let str = '    <h4>User Management</h4> ' +
                 '<table class="table table-hover table-striped">\n' +
                 '    <tr style="background-color: #4d9a4f; color: white">\n' +
                 '        <th>User Name</th>\n' +
@@ -26,21 +26,30 @@ function showListUser(){
                 '        <th>Full Name</th>\n' +
                 '        <th>Role</th>\n' +
                 '        <th>Status</th>\n' +
-                '        <th>Xóa</th>\n' +
                 '        <th>UpRole</th>\n' +
                 '        <th>Block</th>\n' +
                 '    </tr>'
             for (let i = 0; i < list.length; i++) {
+
                 str += '<tr>\n' +
-                    '        <td>'+list[i].username+'</td>\n' +
-                    '        <td>'+list[i].password+'</td>\n' +
-                    '        <td>'+list[i].fullName+'</td>\n' +
-                    '        <td>'+list[i].roleSet[0].name+'</td>\n' +
-                    '        <td>'+list[i].status+'</td>\n' +
-                    '        <td><button class="btn btn-sm btn-outline-danger" >Delete</button></td>\n' +
-                    '        <td><button class="btn btn-sm btn-outline-success" onclick="upRole('+list[i].id+')">UpRole</button></td>\n' +
-                    '        <td><button class="btn btn-sm btn-outline-secondary" onclick="changeStatus('+list[i].id+')">Block</button></td>\n' +
-                    '    </tr>'
+                    '        <td>' + list[i].username + '</td>\n' +
+                    '        <td>' + list[i].password + '</td>\n' +
+                    '        <td>' + list[i].fullName + '</td>\n' +
+                    '        <td>' + list[i].roleSet[0].name + '</td>\n' +
+                    '        <td>' + list[i].status + '</td>\n'
+                if (list[i].roleSet[0].name == "ROLE_USER") {
+                    str += '<td><button class="btn btn-sm btn-outline-success" onclick="upRole(' + list[i].id + ')">UpRole</button></td>\n'
+                } else {
+                    str += '<td><button class="btn btn-sm btn-outline-success" onclick="upRole(' + list[i].id + ')">DownRole</button></td>\n'
+                }
+                if (list[i].status == true) {
+                    str += '        <td><button class="btn btn-sm btn-outline-secondary" onclick="changeStatus(' + list[i].id + ')">Lock</button></td>\n' +
+                        '    </tr>'
+                } else {
+                    str += '        <td><button class="btn btn-sm btn-outline-secondary" onclick="changeStatus(' + list[i].id + ')">UnLock</button></td>\n' +
+                        '    </tr>'
+                }
+
             }
             str += '</table>';
             document.getElementById("content").innerHTML = str;
@@ -68,7 +77,7 @@ function showPost(){
                     '        <td>'+listPost[i].content+'</td>\n' +
                     '        <td>'+listPost[i].status+'</td>\n' +
                     '        <td>'+listPost[i].time+'</td>\n' +
-                    '        <td><button class="btn btn-sm btn-outline-danger" onclick="deletePost('+listPost[i].id+')">Delete</button></td>\n' +
+                    '        <td><button class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="deletePost('+listPost[i].id+')">Delete</button></td>\n' +
                     '    </tr>'
             }
             str += '</table>';
@@ -85,11 +94,13 @@ function deletePost(id){
         type:"delete",
         url: "http://localhost:8080/posts/"+id,
         success: function (){
-            alert("xóa rồi nehs")
+            alert("xóa rồi nhé")
             showPost()
         }
     })
 }
+
+
 function upRole(id){
     $.ajax({
         type:"get",

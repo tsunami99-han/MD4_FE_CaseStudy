@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="add621e6-aa9b-428b-a7c9-1bf89e86e5f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Case-study-md4-wt/CSS/test.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-study-md4-wt/JS/mainAdminPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-study-md4-wt/test/pageAdmin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-study-md4-wt/test/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-study-md4-wt/CSS/login&amp;sigup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-study-md4-wt/JS/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-study-md4-wt/test/sigup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case-study-md4-wt/test/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Case-study-md4-wt/test/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case-study-md4-wt/test/mainPersonalPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/Case-study-md4-wt/JS/mainPersonalPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case-study-md4-wt/test/personalPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Case-study-md4-wt/test/personalPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case-study-md4-wt/JS/mainAdminPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/Case-study-md4-wt/JS/mainAdminPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case-study-md4-wt/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Case-study-md4-wt/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case-study-md4-wt/test/pageAdmin.html" beforeDir="false" afterPath="$PROJECT_DIR$/Case-study-md4-wt/test/pageAdmin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case-study-md4-wt/test/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/Case-study-md4-wt/test/test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,14 +19,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="ProjectId" id="1wTNKoBEq52vmd2KNwMMhvdUrxu" />
   <component name="ProjectViewState">
@@ -57,11 +58,24 @@
       <option name="presentableId" value="Default" />
       <updated>1628478556842</updated>
       <workItem from="1628478558153" duration="9000" />
-      <workItem from="1628647966784" duration="35048000" />
+      <workItem from="1628647966784" duration="36781000" />
+      <workItem from="1628733988913" duration="4649000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
