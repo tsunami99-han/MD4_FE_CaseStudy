@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="add621e6-aa9b-428b-a7c9-1bf89e86e5f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Case-study-md4-wt/CSS/login&amp;sigup.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-study-md4-wt/JS/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-study-md4-wt/test/sigup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case-study-md4-wt/JS/mainAdminPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/Case-study-md4-wt/JS/mainAdminPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case-study-md4-wt/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Case-study-md4-wt/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case-study-md4-wt/test/pageAdmin.html" beforeDir="false" afterPath="$PROJECT_DIR$/Case-study-md4-wt/test/pageAdmin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case-study-md4-wt/test/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/Case-study-md4-wt/test/test.html" afterDir="false" />
-    </list>
+    <list default="true" id="add621e6-aa9b-428b-a7c9-1bf89e86e5f9" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +50,7 @@
       <updated>1628478556842</updated>
       <workItem from="1628478558153" duration="9000" />
       <workItem from="1628647966784" duration="36781000" />
-      <workItem from="1628733988913" duration="4649000" />
+      <workItem from="1628733988913" duration="5436000" />
     </task>
     <servers />
   </component>
